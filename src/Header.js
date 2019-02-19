@@ -10,7 +10,7 @@ class Header extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu>
+      <Menu fixed='top' secondary>
         <Menu.Item
           name='hamburger'
           active={activeItem === 'hamburger'}

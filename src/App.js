@@ -4,6 +4,7 @@ import './App.css';
 import Header from './Header'
 import SidebarChase from './SidebarComponents/SidebarChase'
 import { Button, Icon, Image, Menu, Segment, Sidebar} from 'semantic-ui-react'
+import Footer from './Footer'
 
 
 class App extends Component {
@@ -41,6 +42,9 @@ class App extends Component {
             <Header action={this.openSidebar} className='header'/>
           </Segment>
           <Image src='https://www.planwallpaper.com/static/images/cold_galaxy-HD.jpg' />
+          {/* </Header> */}
+          {/* </Segment> */}
+          <Footer />
           </Sidebar.Pusher >
           <SidebarChase visible={this.state.sidebarIsOpen} action={this.closeSidebar}/>
         </Sidebar.Pushable>

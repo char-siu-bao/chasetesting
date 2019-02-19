@@ -6,7 +6,7 @@ function SidebarElement (props) {
     case 'link':
       return (<Menu.Item as='a' name={props.elem.text} onClick={props.elem.action}/>);
     case 'title':
-      return (<Menu.Item as='h3' name={props.elem.text} onClick={props.elem.action}/>);
+      return (<Menu.Item as='p' name={props.elem.text} onClick={props.elem.action}/>);
     case 'icon':
       return (
       <Menu.Item as='a' name={props.elem.text} onClick={props.elem.action}>
